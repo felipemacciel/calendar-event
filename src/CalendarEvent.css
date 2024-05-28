@@ -470,13 +470,13 @@ display: flex;
 
 }
 .rbc-row-segment {
-    padding: 0 5px 0px 10px;
+    padding: 0 7px 0px 7px!important;
 }
 
 .rbc-header+.rbc-header{
     border:none;
 }
-.rbc-day-bg, .rbc-today,.rbc-off-range-bg{
+.rbc-day-bg, .rbc-off-range-bg{
     margin:7px;
     border: 1px solid #d5d9e2;
     border-radius: 5px;
@@ -501,7 +501,7 @@ display: flex;
      border-top: 0px solid #ddd; 
 }
 .rbc-day-bg.rbc-today{
-    border: 2px solid #1B7754!important;
+    border: 2px solid #3174AD!important;
     box-shadow: 0px 0px 24px rgba(27, 119, 84, 0.48)!important;
 }
 .rbc-day-bg:not(.rbc-off-range-bg, .caledar-bg-day-have-event){
@@ -516,16 +516,11 @@ display: flex;
     opacity: 0.62;
 }
 .rbc-day-slot .rbc-background-event, .rbc-event{
-    background-color: transparent!important;
     opacity: 0.92;
     color:#000000;
     font-weight: 500;
     border-radius: 8px;
     font-size:13px;
-}
-.rbc-event-content{
-    color: black!important;
-    padding: 0 10px;
 }
 
 .rbc-day-slot .rbc-selected.rbc-background-event, .rbc-event.rbc-selected{

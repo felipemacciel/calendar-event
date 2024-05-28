@@ -1,11 +1,11 @@
 import React from 'react';
-import * as moment from 'moment';
+import moment from 'moment';
 import "../src/CalendarEvent.css"
 import { Modal } from '@fluentui/react';
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
-moment.locale('pt-BR');
+moment.locale('pt-br');
 const localizer = momentLocalizer(moment);
 
 
@@ -58,7 +58,7 @@ export default function App(): JSX.Element {
   
     if (haveEvents) {
       return {
-        className: 'calendar-bg-day-have-event'
+        className: 'caledar-bg-day-have-event'
       };
     }
     return {}; 
@@ -69,17 +69,21 @@ export default function App(): JSX.Element {
     setShowDialog(true);
   };
   const messages = {
-    allDay: 'Dia Inteiro',
-    previous: '<',
-    next: '>',
-    today: 'Hoje',
-    month: 'Mês',
-    week: 'Semana',
-    day: 'Dia',
-    agenda: 'Agenda',
-    date: 'Data',
-    time: 'Hora',
-    event: 'Evento',
+    date: "Data",
+    time: "Hora",
+    event: "Evento",
+    allDay: "Dia Todo",
+    week: "Semana",
+    work_week: "Eventos",
+    day: "Dia",
+    month: "Mês",
+    previous: "Anterior",
+    next: "Próximo",
+    yesterday: "Ontem",
+    tomorrow: "Amanhã",
+    today: "Hoje",
+    agenda: "Agenda",
+    noEventsInRange: "Não há eventos no período.",
     showMore: (total:number) => `+${total} Ver mais`
   }
   const calendarEvents: CalendarEvent[] = events.map(event => ({
