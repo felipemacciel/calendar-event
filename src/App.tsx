@@ -4,8 +4,8 @@ import "../src/CalendarEvent.css"
 import { Modal } from '@fluentui/react';
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import "moment/locale/pt-br";
 
-moment.locale('pt-br');
 const localizer = momentLocalizer(moment);
 
 
